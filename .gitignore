@@ -1,0 +1,74 @@
+#pragma config(Sensor, S1,	TouchSensor, sensorTouchActive)
+
+
+taskMain() {
+  
+             system.out.print("hello world");
+             
+             
+             float iswingdegrees=10;
+             float iswingpower=10;
+             
+             
+  //run while weight is on swing
+            if(SensorValue(touchSensor) == 1){
+                    
+  //run motor for 90 degrees
+                          while(nMotorEncoder<swingdegrees){           
+                           motor[motorA]=iswingpower;
+                                
+                                      
+                                      
+                          }    else { 
+                          
+                          
+                          motor[motorA]=-iswingpower;
+                          
+                          
+                          if(iswingpower<50){
+                          
+                          iswingpower +=1;
+                          
+                          }
+                          if(iswingdegrees<120){
+                          
+                          iswingdegrees +=1;
+                          
+                          }
+                          
+                          
+                          }            
+                                      
+                                      
+                       
+                       
+                       
+                                      
+                }
+                   
+                   
+                   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
